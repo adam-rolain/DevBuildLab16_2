@@ -1,0 +1,6 @@
+<ng-container *ngIf="post">
+    <p>{{ post.data.title }}</p>
+    <img src="{{ post.data.thumbnail }}" /><br />
+    <a href="https://www.reddit.com{{ post.data.permalink }}">Link</a>
+</ng-container>
+

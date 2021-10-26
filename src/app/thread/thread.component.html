@@ -1,0 +1,8 @@
+<ng-container *ngIf="thread">
+    <ng-container *ngFor="let post of thread.data.children; let i = index">
+        <h3>Post {{ i + 1 }}</h3>
+        <app-post [post]="post"></app-post>
+    </ng-container>
+</ng-container>
+
+
